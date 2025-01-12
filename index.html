@@ -3,11 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Embedded Page</title>
+  <title>Full-Page Embedded Iframe</title>
+  <style>
+    /* Remove margin and padding from the body to make the iframe fill the screen */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%; /* Ensure the body takes up the full viewport height */
+    }
+    iframe {
+      display: block; /* Remove default inline iframe spacing */
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      border: none; /* Remove border for a seamless look */
+    }
+  </style>
 </head>
 <body>
-  <iframe src="./MasonYayYay's Chat Room.html" width="100%" height="1000px" style="border:none;">
-    Your browser does not support iframes.
-  </iframe>
+  <!-- Embed the other file -->
+  <iframe src="./MasonYayYay's Chat Room.html"></iframe>
 </body>
 </html>
